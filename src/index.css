@@ -9,9 +9,11 @@
   scroll-behavior: smooth;
 }
 #whyChina{
-  background-image: url('../src/assets/whyChina.jpg');
-  background-size: 100% 100%;
+  width: 100% !important;
+  background-image: url('../src/assets/whyChina2.png');
   background-repeat: no-repeat;
+  background-size: 100%;
+  object-fit: contain;
 }
 .bg-image{
   background-image: url('../src/assets/city2.png');
