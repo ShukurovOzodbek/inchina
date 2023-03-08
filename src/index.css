@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Slab&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab';
+  scroll-behavior: smooth;
+}
+#whyChina{
+  background-image: url('../src/assets/whyChina.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.bg-image{
+  background-image: url('../src/assets/city2.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  object-fit: cover;
+}
+body *::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height: 520px;
+}
+
+.swiper-slide {
+  background: white;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  max-height: 0px;
+  border: 30px;
+}
+.swiper-button-next {
+  color: #ffffff !important;
+}
+.swiper-button-prev {
+  color: #ffffff !important;
+  border-radius: 100%;
+}
+.swiper-pagination-bullet-active{
+  background: #363636 !important;
+}
+.bg-b{
+  background: rgba(0, 0, 0, 0.8);
+}
+.transition-class{
+  transition: .4s ease;
+}
+.scroll{
+  overflow-x: scroll;
+}
+.raleway, .way {
+  font-family: 'Raleway';
+}
+.bg-man{
+  background: rgba(0, 0, 0, 0.1);
+}
+.bg-back{
+  background-image: url('../src/assets/back.png');
+}
+.back{
+  background-image: url('../src/assets/china.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
