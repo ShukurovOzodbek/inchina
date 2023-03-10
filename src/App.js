@@ -40,6 +40,7 @@ function App() {
 
             {
                 language === 'ru' ? <div className="bg-[#F9F9F9] w-full overflow-hidden
+                m-auto
                 ">
                     <Header/>
                     <Direction/>

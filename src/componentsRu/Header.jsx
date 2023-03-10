@@ -15,7 +15,7 @@ const Header = () => {
     return (<div
             className='flex flex-col justify-between w-full gap-[90px] items-center border-dashed pb-14 border-b-[3px] lg:border-b-[4px] border-b-[#747474] '
             id='header'>
-            <div className='relative h-[70vh] w-full flex items-center justify-center lg:min-h-[500px]'>
+            <div className='relative w-full flex items-center justify-center lg:min-h-[520px]'>
                 <div
                     className='w-full text-white right-0 top-0 flex justify-center back items-center p-2 flex-col gap-10 pb-[65px] pt-[30px] lg:h-[532px]'>
                     <div className={'flex justify-center lg:justify-between w-[80%] py-[30px]'}>
