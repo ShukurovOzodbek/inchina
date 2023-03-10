@@ -75,10 +75,9 @@ body *::-webkit-scrollbar{
   background-image: url('../src/assets/back.png');
 }
 .back{
-  /*width: 100% !important;*/
   background-image: url('../src/assets/china.png');
-  background-repeat: no-repeat;
   background-size: 100% 100%;
+  background-position: center;
   object-fit: cover;
 }
 @tailwind base;

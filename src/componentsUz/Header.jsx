@@ -1,5 +1,6 @@
 import React, {useContext} from 'react'
 import logo from '../assets/logo.png'
+import china2back from '../assets/china2back.png'
 import {languageContext} from "../contexts/languageContext";
 import phone from "../assets/phone.png";
 
@@ -43,7 +44,8 @@ const Header2 = () => {
                         </div>
                     </div>
                     <div className='w-full flex flex-col text-center gap-5 items-center'>
-                        <h1 className='text-[42px] text-center font-bold sm:text-[52px] md:text-[45px] lg:text-[70px] uppercase'>Xitoyda o'qish</h1>
+                        <h1 className='text-[42px] text-center font-bold sm:text-[52px] md:text-[45px] lg:text-[70px] uppercase'>Xitoyda
+                            o'qish</h1>
                         <h3 className='text-[28px] md:text-[40px] lg:text-[49px] mb-[17px]'>留学中国</h3>
                         <div className='text-center'>
                             <p className='block lg:hidden uppercase text-[14px] md:text-[16px] raleway'>Xitoyga o'qishga

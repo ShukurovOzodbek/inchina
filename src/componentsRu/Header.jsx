@@ -2,6 +2,7 @@ import React, {useContext} from 'react'
 import logo from '../assets/logo.png'
 import phone from '../assets/phone.png'
 import {languageContext} from "../contexts/languageContext";
+import china2back from "../assets/china2back.png";
 
 const Header = () => {
 
@@ -11,6 +12,8 @@ const Header = () => {
         modal.style.display = 'flex'
         modal.style.opacity = '1'
     }
+
+
 
     return (<div
             className='flex flex-col justify-between w-full gap-[90px] items-center border-dashed pb-14 border-b-[3px] lg:border-b-[4px] border-b-[#747474] '
@@ -37,7 +40,8 @@ const Header = () => {
                             <button onClick={() => {
                                 setLanguage('uz')
                                 console.log(language)
-                            }} className='text-[22px] raleway'>UZ</button>
+                            }} className='text-[22px] raleway'>UZ
+                            </button>
                         </div>
                     </div>
                     <div className='w-full flex flex-col text-center gap-5 items-center'>

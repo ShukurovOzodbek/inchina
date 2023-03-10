@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import city from '../assets/city.png'
+import axios from "axios";
 
 const Timer2 = () => {
     const [name, setName] = useState('')
@@ -20,6 +21,9 @@ const Timer2 = () => {
             min.innerHTML = Math.floor((prom % (1000 * 60 * 60)) / (1000 * 60))
         });
     }, [])
+    const TOKEN = '6298482936:AAE6H77aXRQOA7aKzN9TITvDjk-Ny2WlNt4'
+    const CHAT_ID = 2117950066
+    const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -28,9 +32,18 @@ const Timer2 = () => {
         }
         console.log(inform);
         localStorage.setItem('userObj', JSON.stringify(inform))
-        setTimeout(() => {
-            window.location.href = 'https://inchina.uz/uz/thank'
-        }, 1000)
+
+        let message = `<b>Заявка</b>\n`;
+        message += `<b>Имя: ${name} </b>\n`
+        message += `<b>Номер телефона: +998 ${+phoneNumber} </b>`
+
+
+        axios.post(URI_API, {
+            chat_id: CHAT_ID,
+            parse_mode: 'html',
+            text: message
+        })
+
     }
 
     return (

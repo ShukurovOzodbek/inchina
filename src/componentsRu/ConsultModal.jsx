@@ -1,21 +1,36 @@
 import React, {useState} from 'react'
 import sticker from '../assets/sticker.png'
 import china_text from '../assets/china_text.png'
+import axios from "axios";
 
 export const ConsultModal = () => {
     const [name, setName] = useState('')
-    const [phoneNumber, setPhoneNumber] = useState('')
+    const [phoneNumber, setPhoneNumber] = useState(0)
+
+    const TOKEN = '6298482936:AAE6H77aXRQOA7aKzN9TITvDjk-Ny2WlNt4'
+    const CHAT_ID = 2117950066
+    const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`
+
 
     const handleSubmit = (e) => {
         e.preventDefault()
         const inform = {
-            name, phoneNumber: +phoneNumber
+            name, phoneNumber: `+998 ${+phoneNumber}`
         }
         console.log(inform);
         localStorage.setItem('userObj', JSON.stringify(inform))
-        setTimeout(() => {
-            window.location.href = 'https://inchina.uz/thank'
-        }, 1000)
+
+        let message = `<b>Заявка</b>\n`;
+        message += `<b>Имя: ${name} </b>\n`
+        message += `<b>Номер телефона: +998 ${+phoneNumber} </b>`
+
+
+        axios.post(URI_API, {
+            chat_id: CHAT_ID,
+            parse_mode: 'html',
+            text: message
+        })
+
     }
     const modalClose = () => {
         let modal = document.querySelector('.transition-class')
@@ -45,9 +60,9 @@ export const ConsultModal = () => {
                                         className="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-50 border border-r-0 border-gray-300 rounded-l-md">
                                         +998
                                     </span>
-                        <input onChange={(e) => setPhoneNumber(e.target.value)} type="phone"
+                        <input onChange={(e) => setPhoneNumber(e.target.value)} type="number"
                                class="bg-gray-50 border text-black p-[12px] pl-[15px] way text-[16px] border-gray-300 text-sm rounded-r-lg focus:ring-blue-500 focus:border-blue-500 block w-full dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none"
-                               placeholder="(99) 999-99-99" maxLength="10" pattern={'[0-9]{2} [0-9]{7}'} required/>
+                               placeholder="(99) 999-99-99"/>
                     </div>
                     <button type='submit'
                             className='w-full rounded-lg bg-[#6B941A] text-white text-[12px] cursor-pointer font-semibold uppercase raleway p-4'>бесплатная
