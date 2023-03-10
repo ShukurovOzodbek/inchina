@@ -1,13 +1,17 @@
 import sticker from '../assets/sticker.png'
 import china_text from '../assets/china_text.png'
-import React, {useEffect, useState} from "react";
+import React, {useContext, useEffect, useState} from "react";
 import Footer from "./Footer";
+import {thankContext} from "../contexts/thank";
 const Thank = () => {
     const [userObj, setUserObj] = useState({})
     useEffect(() => {
         setUserObj(JSON.parse(localStorage.getItem('userObj')))
     }, [])
-
+    const { setThankRu } = useContext(thankContext)
+    const handleClick = () => {
+        setThankRu(false)
+    }
     return (
         <div>
             <div className={'relative w-full p-20'}>
@@ -18,6 +22,7 @@ const Thank = () => {
                 <div className='w-full flex flex-col items-center justify-center'>
                     <img src={sticker} alt=""/>
                     <img className='absolute bottom-0 left-0' src={china_text} alt=""/>
+                    <button onClick={handleClick}> {'<'} Вернуться назад</button>
                 </div>
             </div>
             <Footer />
