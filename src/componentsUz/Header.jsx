@@ -21,7 +21,7 @@ const Header2 = () => {
             id='header'>
             <div className='relative w-full flex items-center justify-center lg:min-h-[500px]'>
                 <div
-                    className='w-full text-white right-0 top-0 flex justify-center back items-center p-2 flex-col gap-10 pb-[65px] pt-[30px] lg:h-[532px]'>
+                    className='w-full text-white right-0 top-0 flex justify-between back items-center p-2 flex-col gap-10 pb-[65px] pt-[30px] lg:h-[640px]'>
                     <div className={'flex justify-center lg:justify-between w-[80%] py-[30px]'}>
                         <div className={'hidden lg:flex gap-5 items-center'}>
                             <span className={'text-[20px] flex items-center gap-2 way'}>

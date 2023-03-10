@@ -9,7 +9,7 @@ import language from '../assets/language.png'
 
 const Direction = () => {
     return (
-        <div id="direction" className='w-full p-5 py-20 flex items-center flex-col gap-20 relative overflow-hidden'>
+        <div id="direction" className='w-full p-5 py-20 flex items-center flex-col gap-20 relative overflow-hidden lg:h-[700px]'>
             <h2 className='uppercase text-[25px] text-center w-full font-[900] text-[#393939] md:text-[30px] lg:text-[40px]'>Наши
                 направления</h2>
             <img className='absolute right-[-10px] top-[15%]' src={flower} alt=""/>
