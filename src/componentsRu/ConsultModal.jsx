@@ -1,7 +1,8 @@
-import React, {useState} from 'react'
+import React, {useContext, useState} from 'react'
 import sticker from '../assets/sticker.png'
 import china_text from '../assets/china_text.png'
 import axios from "axios";
+import {thankContext} from "../contexts/thank";
 
 export const ConsultModal = () => {
     const [name, setName] = useState('')
@@ -11,6 +12,7 @@ export const ConsultModal = () => {
     const CHAT_ID = 2117950066
     const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`
 
+    const { setThankRu } = useContext(thankContext)
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -29,7 +31,7 @@ export const ConsultModal = () => {
             chat_id: CHAT_ID,
             parse_mode: 'html',
             text: message
-        })
+        }).then((res) => setThankRu(true))
 
     }
     const modalClose = () => {

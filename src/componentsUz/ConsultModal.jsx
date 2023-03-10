@@ -1,11 +1,14 @@
-import React, {useState} from 'react'
+import React, {useContext, useState} from 'react'
 import sticker from '../assets/sticker.png'
 import china_text from '../assets/china_text.png'
 import axios from "axios";
+import {thankContext} from "../contexts/thank";
 
 export const ConsultModal2 = () => {
     const [name, setName] = useState('')
     const [phoneNumber, setPhoneNumber] = useState('')
+
+    const { setThankUz } = useContext(thankContext)
 
     const TOKEN = '6298482936:AAE6H77aXRQOA7aKzN9TITvDjk-Ny2WlNt4'
     const CHAT_ID = 2117950066
@@ -29,7 +32,8 @@ export const ConsultModal2 = () => {
             chat_id: CHAT_ID,
             parse_mode: 'html',
             text: message
-        })
+        }).then((res) => setThankUz(true))
+
 
     }
     const modalClose = () => {

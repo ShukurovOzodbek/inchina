@@ -21,55 +21,66 @@ import Timer2 from './componentsUz/Timer'
 import Footer2 from './componentsUz/Footer'
 import {ConsultModal2} from './componentsUz/ConsultModal'
 import './App.css';
-import {Route, Routes} from "react-router-dom";
 import Thank2 from "./componentsUz/Thank";
 import Thank from "./componentsRu/Thank";
-import {useContext, useState} from "react";
+import {useEffect, useState} from "react";
 import {languageContext} from "./contexts/languageContext";
+import {thankContext} from "./contexts/thank";
 
 function App() {
     const [language, setLanguage] = useState('ru')
+    const [thankRu, setThankRu] = useState(false)
+    const [thankUz, setThankUz] = useState(false)
+
     return (
 
-    <languageContext.Provider value={{ language, setLanguage }}>
-        <>
-            <Routes>
-                <Route path={'/uz/thank'} element={<Thank2/>}/>
-                <Route path={'/thank'} element={<Thank/>}/>
-            </Routes>
-
-            {
-                language === 'ru' ? <div className="bg-[#F9F9F9] w-full overflow-hidden
+        <thankContext.Provider value={{thankRu, thankUz, setThankRu, setThankUz}}>
+            <languageContext.Provider value={{language, setLanguage}}>
+                <>
+                    {
+                        language === 'ru' ? <div className="bg-[#F9F9F9] w-full overflow-hidden
                 m-auto
                 ">
-                    <Header/>
-                    <Direction/>
-                    <WhyChina/>
-                    <PopularPrograms/>
-                    <InChinaNumbers/>
-                    <Instruction/>
-                    <Reviews/>
-                    <Questions/>
-                    <Timer/>
-                    <Footer/>
-                    <ConsultModal/>
-                </div> : <div className="bg-[#F9F9F9] w-full overflow-hidden">
-                    <Header2/>
-                    <Direction2/>
-                    <WhyChina2/>
-                    <PopularPrograms2/>
-                    <InChinaNumbers2/>
-                    <Instruction2/>
-                    <Reviews2/>
-                    <Questions2/>
-                    <Timer2/>
-                    <Footer2/>
-                    <ConsultModal2/>
-                </div>
-            }
-        </>
-    </languageContext.Provider>
-    );
+                            {
+                                thankRu ? <Thank/> : <>
+                                    <Header/>
+                                    <Direction/>
+                                    <WhyChina/>
+                                    <PopularPrograms/>
+                                    <InChinaNumbers/>
+                                    <Instruction/>
+                                    <Reviews/>
+                                    <Questions/>
+                                    <Timer/>
+                                    <Footer/>
+                                    <ConsultModal/>
+                                </>
+                            }
+                        </div> : <div className="bg-[#F9F9F9] w-full overflow-hidden">
+                            <>
+                                {
+                                    thankUz ? <Thank2/> : <>
+                                        <Header2/>
+                                        <Direction2/>
+                                        <WhyChina2/>
+                                        <PopularPrograms2/>
+                                        <InChinaNumbers2/>
+                                        <Instruction2/>
+                                        <Reviews2/>
+                                        <Questions2/>
+                                        <Timer2/>
+                                        <Footer2/>
+                                        <ConsultModal2/>
+                                    </>
+                                }
+                            </>
+                        </div>
+                    }
+                </>
+            </languageContext.Provider>
+        </thankContext.Provider>
+    )
+        ;
 }
 
 export default App;

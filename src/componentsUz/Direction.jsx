@@ -9,12 +9,12 @@ import language from '../assets/language.png'
 
 const Direction2 = () => {
     return (
-        <div id="direction" className='w-full p-5 py-20 flex items-center flex-col gap-20 relative overflow-hidden'>
+        <div id="direction" className='w-full p-5 py-20 flex items-center flex-col gap-20 relative overflow-hidden lg:h-[800px]'>
             <h2 className='uppercase text-[25px] text-center w-full font-[900] text-[#393939] md:text-[30px] lg:text-[40px]'>Bizning yo'nalishlarimiz</h2>
             <img className='absolute right-[-10px] top-[15%]' src={flower} alt=""/>
             <img className='absolute block lg:hidden right-[-10px] bottom-[-10%]' src={coins} alt=""/>
             <img className='absolute left-[-10px] bottom-[-10%] w-[120px]' src={coins2} alt=""/>
-            <div className='flex flex-col lg:flex-row gap-10 md:w-[76%] lg:w-[60%] lg:flex-wrap'>
+            <div className='flex flex-col lg:flex-row gap-10 md:w-[76%] lg:w-[60%] justify-center lg:flex-wrap'>
                 <DirectionsComponent img={chinaFlag}
                                      text={'это первая ступень высшего образования, базовый образовательный цикл, прохождение которого дает возможность'}
                                      direction={'Bakalavr'}/>

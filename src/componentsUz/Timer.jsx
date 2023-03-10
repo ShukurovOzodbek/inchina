@@ -1,6 +1,7 @@
-import React, {useEffect, useState} from 'react'
+import React, {useContext, useEffect, useState} from 'react'
 import city from '../assets/city.png'
 import axios from "axios";
+import {thankContext} from "../contexts/thank";
 
 const Timer2 = () => {
     const [name, setName] = useState('')
@@ -24,6 +25,7 @@ const Timer2 = () => {
     const TOKEN = '6298482936:AAE6H77aXRQOA7aKzN9TITvDjk-Ny2WlNt4'
     const CHAT_ID = 2117950066
     const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`
+    const { setThankUz } = useContext(thankContext)
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -34,15 +36,15 @@ const Timer2 = () => {
         localStorage.setItem('userObj', JSON.stringify(inform))
 
         let message = `<b>Заявка</b>\n`;
-        message += `<b>Имя: ${name} </b>\n`
-        message += `<b>Номер телефона: +998 ${+phoneNumber} </b>`
+        message += `<b>Ismi: ${name} </b>\n`
+        message += `<b>Telefon raqami: +998 ${+phoneNumber} </b>`
 
 
         axios.post(URI_API, {
             chat_id: CHAT_ID,
             parse_mode: 'html',
             text: message
-        })
+        }).then((res) => setThankUz(true))
 
     }
 
@@ -69,7 +71,7 @@ const Timer2 = () => {
                     </div>
                     <form onSubmit={handleSubmit} className='w-[90%] flex flex-col gap-4 items-center' action="">
                         <input onChange={(e) => setName(e.target.value)} type="text" className="bg-gray-50 border text-black p-[12px] pl-[33px] way text-[16px] border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="Ismingiz" required />
-                        <input onChange={(e) => setPhoneNumber(e.target.value)} type="number" className="bg-gray-50 border text-black p-[12px] pl-[33px] way text-[16px] border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="Telefon raqmingiz" required />
+                        <input onChange={(e) => setPhoneNumber(e.target.value)} type="number" className="bg-gray-50 border text-black p-[12px] pl-[33px] way text-[16px] border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="Telefon raqmingiz (+998 937777777)" required />
                         <button className='w-[90%] lg:w-full rounded-full lg:rounded-lg lg:text-[14px] bg-[#6B941A] text-white text-[12px] cursor-pointer font-semibold uppercase raleway p-4'>Bepul Konsultatsiya</button>
                     </form>
                 </div>

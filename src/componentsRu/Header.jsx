@@ -33,13 +33,11 @@ const Header = () => {
                         <div className='text-center flex items-center gap-2'>
                             <button onClick={() => {
                                 setLanguage('ru')
-                                console.log(language)
                             }} className='text-[22px] text-[#6B941A] raleway'>RU
                             </button>
                             <span className='tect-[28px]'>|</span>
                             <button onClick={() => {
                                 setLanguage('uz')
-                                console.log(language)
                             }} className='text-[22px] raleway'>UZ
                             </button>
                         </div>

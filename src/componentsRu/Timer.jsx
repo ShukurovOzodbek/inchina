@@ -1,6 +1,7 @@
-import React, {useEffect, useState} from 'react'
+import React, {useContext, useEffect, useState} from 'react'
 import city from '../assets/city.png'
 import axios from "axios";
+import {thankContext} from "../contexts/thank";
 
 const Timer = () => {
     const [name, setName] = useState('')
@@ -9,6 +10,7 @@ const Timer = () => {
     const TOKEN = '6298482936:AAE6H77aXRQOA7aKzN9TITvDjk-Ny2WlNt4'
     const CHAT_ID = 2117950066
     const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`
+    const { setThankRu } = useContext(thankContext)
 
     useEffect(() => {
         const day = document.querySelector('#day')
@@ -44,7 +46,7 @@ const Timer = () => {
             chat_id: CHAT_ID,
             parse_mode: 'html',
             text: message
-        })
+        }).then((res) => setThankRu(true))
     }
 
     return (
@@ -70,7 +72,7 @@ const Timer = () => {
                     </div>
                     <form onSubmit={handleSubmit} className='w-[90%] flex flex-col gap-4 items-center' action="">
                         <input value={name} onChange={(e) => setName((e.target.value))} type="text" className="bg-gray-50 border text-black p-[12px] pl-[33px] way text-[16px] border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="Имя" required />
-                        <input value={phoneNumber} onChange={(e) => setPhoneNumber((e.target.value))} type="number" placeholder="(99) 999-99-99" maxLength="10" required pattern={'[0-9]{2} [0-9]{7}'} className="bg-gray-50 border text-black p-[12px] pl-[33px] way text-[16px] border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="Номер телефона" required />
+                        <input value={phoneNumber} onChange={(e) => setPhoneNumber((e.target.value))} type="number" placeholder="(99) 999-99-99" maxLength="10" required pattern={'[0-9]{2} [0-9]{7}'} className="bg-gray-50 border text-black p-[12px] pl-[33px] way text-[16px] border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="Номер телефона (+998 937777777)" required />
                         <button className='w-[90%] lg:w-full rounded-full lg:rounded-lg lg:text-[14px] bg-[#6B941A] text-white text-[12px] cursor-pointer font-semibold uppercase raleway p-4'>бесплатная консультация</button>
                     </form>
                 </div>
