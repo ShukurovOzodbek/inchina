@@ -14,7 +14,7 @@ export const ConsultModal2 = () => {
         console.log(inform);
         localStorage.setItem('userObj', JSON.stringify(inform))
         setTimeout(() => {
-            window.location.href = 'http://localhost:3000/uz/thank'
+            window.location.href = 'https://inchina.uz/uz/thank'
         }, 1000)
     }
     const modalClose = () => {

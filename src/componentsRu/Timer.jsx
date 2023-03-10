@@ -29,7 +29,7 @@ const Timer = () => {
         console.log(inform);
         localStorage.setItem('userObj', JSON.stringify(inform))
         setTimeout(() => {
-            window.location.href = 'http://localhost:3000/thank'
+            window.location.href = 'https://inchina.uz/thank'
         setName('')
         setPhoneNumber(0)
         }, 1000)
@@ -39,7 +39,7 @@ const Timer = () => {
         <div className='py-20 relative min-h-[550px] bg-image md:flex items-center justify-center'>
             <div className='md:w-[76%] text-white flex flex-col gap-4 items-center text-center top-20 right-0 lg:py-[70px]'>
                 <h2 className='uppercase text-[27px] text-center font-[900] md:text-[30px] lg:text-[40px]'>до конца сезона осталось:</h2>
-                <div className='w-full flex flex-col items-center gap-10 lg:w-[50%]'>
+                <div className='w-full flex flex-col items-center gap-10 lg:w-[500px]'>
                     <div className='w-[90%] bg-[#1E1E1E] rounded-2xl justify-between p-5 px-[40px] flex items-start'>
                         <div className='flex flex-col items-center'>
                             <h3 id="day" className='text-[30px] font-bold'>25</h3>

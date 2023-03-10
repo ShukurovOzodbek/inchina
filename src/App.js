@@ -24,39 +24,49 @@ import './App.css';
 import {Route, Routes} from "react-router-dom";
 import Thank2 from "./componentsUz/Thank";
 import Thank from "./componentsRu/Thank";
+import {useContext, useState} from "react";
+import {languageContext} from "./contexts/languageContext";
 
 function App() {
+    const [language, setLanguage] = useState('ru')
     return (
-        <Routes>
-            <Route index element={<div className="bg-[#F9F9F9] w-full overflow-hidden">
-                <Header/>
-                <Direction/>
-                <WhyChina/>
-                <PopularPrograms/>
-                <InChinaNumbers/>
-                <Instruction/>
-                <Reviews/>
-                <Questions/>
-                <Timer/>
-                <Footer/>
-                <ConsultModal/>
-            </div>} />
-            <Route path={'/uz'} element={<div className="bg-[#F9F9F9] w-full overflow-hidden">
-                <Header2/>
-                <Direction2/>
-                <WhyChina2/>
-                <PopularPrograms2/>
-                <InChinaNumbers2/>
-                <Instruction2/>
-                <Reviews2/>
-                <Questions2/>
-                <Timer2/>
-                <Footer2/>
-                <ConsultModal2/>
-            </div>} />
-            <Route path={'/uz/thank'} element={<Thank2 />} />
-            <Route path={'/thank'} element={<Thank />} />
-        </Routes>
+
+    <languageContext.Provider value={{ language, setLanguage }}>
+        <>
+            <Routes>
+                <Route path={'/uz/thank'} element={<Thank2/>}/>
+                <Route path={'/thank'} element={<Thank/>}/>
+            </Routes>
+
+            {
+                language === 'ru' ? <div className="bg-[#F9F9F9] w-full overflow-hidden">
+                    <Header/>
+                    <Direction/>
+                    <WhyChina/>
+                    <PopularPrograms/>
+                    <InChinaNumbers/>
+                    <Instruction/>
+                    <Reviews/>
+                    <Questions/>
+                    <Timer/>
+                    <Footer/>
+                    <ConsultModal/>
+                </div> : <div className="bg-[#F9F9F9] w-full overflow-hidden">
+                    <Header2/>
+                    <Direction2/>
+                    <WhyChina2/>
+                    <PopularPrograms2/>
+                    <InChinaNumbers2/>
+                    <Instruction2/>
+                    <Reviews2/>
+                    <Questions2/>
+                    <Timer2/>
+                    <Footer2/>
+                    <ConsultModal2/>
+                </div>
+            }
+        </>
+    </languageContext.Provider>
     );
 }
 

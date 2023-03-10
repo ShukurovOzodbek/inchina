@@ -15,6 +15,7 @@
   background-size: 100% 100%;
   object-fit: cover;
 }
+
 .bg-image{
   background-image: url('../src/assets/city2.png');
   background-repeat: no-repeat;
@@ -71,9 +72,11 @@ body *::-webkit-scrollbar{
   background-image: url('../src/assets/back.png');
 }
 .back{
+  width: 100% !important;
   background-image: url('../src/assets/china.png');
-  background-size: 100% 100%;
   background-repeat: no-repeat;
+  background-size: 100% 100%;
+  object-fit: fill;
 }
 @tailwind base;
 @tailwind components;

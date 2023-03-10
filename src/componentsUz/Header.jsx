@@ -1,13 +1,19 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import logo from '../assets/logo.png'
+import {languageContext} from "../contexts/languageContext";
 
 const Header2 = () => {
+
+
+    const {setLanguage} = useContext(languageContext)
 
     const modalOpen = () => {
         let modal = document.querySelector('.transition-class')
         modal.style.display = 'flex'
         modal.style.opacity = '1'
     }
+
+
 
     return (<div
         className='flex flex-col w-full gap-[90px] items-center border-dashed pb-14 border-b-[3px] border-b-[#747474]'
@@ -16,9 +22,9 @@ const Header2 = () => {
             <div
                 className='w-full text-white right-0 top-0 flex justify-center back items-center p-2 flex-col gap-10 py-[65px]'>
                 <div className='text-center flex items-center gap-2'>
-                    <a className='text-[22px] raleway' href="/">RU</a>
+                    <button onClick={() => setLanguage('ru')} className='text-[22px] raleway'>RU</button>
                     <span className='tect-[28px]'>|</span>
-                    <a className='text-[22px] text-[#6B941A] raleway' href="/uz">UZ</a>
+                    <button onClick={() => setLanguage('uz')} className='text-[22px] text-[#6B941A] raleway'>UZ</button>
                 </div>
                 <div className='w-full flex flex-col text-center gap-5 items-center'>
                     <h1 className='text-[42px] text-center font-bold sm:text-[52px] md:text-[45px] lg:text-[50px]'>
