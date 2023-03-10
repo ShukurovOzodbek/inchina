@@ -26,7 +26,7 @@ export const ConsultModal = () => {
         <div
             className='w-full h-[100vh] bg-b fixed z-[100] top-0 flex items-center justify-center hidden opacity-0 transition-class'>
             <div
-                className='w-[98%] md:w-[60%] lg:w-[50%] rounded-xl relative left-[1%] bg-white p-7 pt-10 flex flex-col gap-4 items-center'>
+                className='w-[98%] md:w-[60%] lg:w-[500px] rounded-xl relative left-[1%] bg-white p-7 pt-10 flex flex-col gap-4 items-center'>
                 <svg onClick={modalClose} className={'absolute right-0 top-[-50px] cursor-pointer'}
                      xmlns="http://www.w3.org/2000/svg" fill={'#ffffff'} viewBox="0 0 50 50" width="30px" height="30px">
                     <path

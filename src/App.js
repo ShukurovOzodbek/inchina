@@ -39,7 +39,8 @@ function App() {
             </Routes>
 
             {
-                language === 'ru' ? <div className="bg-[#F9F9F9] w-full overflow-hidden">
+                language === 'ru' ? <div className="bg-[#F9F9F9] w-full overflow-hidden
+                ">
                     <Header/>
                     <Direction/>
                     <WhyChina/>

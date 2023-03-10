@@ -13,12 +13,12 @@ const Header = () => {
     }
 
     return (<div
-            className='flex flex-col w-full gap-[90px] items-center border-dashed pb-14 border-b-[3px] lg:border-b-[4px] border-b-[#747474] '
+            className='flex flex-col justify-between w-full gap-[90px] items-center border-dashed pb-14 border-b-[3px] lg:border-b-[4px] border-b-[#747474] '
             id='header'>
-            <div className='relative w-full flex items-center justify-center lg:min-h-[500px]'>
+            <div className='relative h-[70vh] w-full flex items-center justify-center lg:min-h-[500px]'>
                 <div
                     className='w-full text-white right-0 top-0 flex justify-center back items-center p-2 flex-col gap-10 pb-[65px] pt-[30px] lg:h-[532px]'>
-                    <div className={'flex justify-between w-[80%] py-[30px]'}>
+                    <div className={'flex justify-center lg:justify-between w-[80%] py-[30px]'}>
                         <div className={'hidden lg:flex gap-5 items-center'}>
                             <span className={'text-[20px] flex items-center gap-2 way'}>
                                 <img src={phone} alt=""/>
@@ -43,7 +43,7 @@ const Header = () => {
                     <div className='w-full flex flex-col text-center gap-5 items-center'>
                         <h1 className='text-[42px] text-center font-bold sm:text-[52px] md:text-[45px] lg:text-[70px] uppercase'>Учеба
                             в китае</h1>
-                        <h3 className='text-[28px] md:text-[40px] lg:text-[45px] mb-[17px]'>留学中国</h3>
+                        <h3 className='text-[28px] md:text-[40px] lg:text-[49px] mb-[17px]'>留学中国</h3>
                         <div className='text-center'>
                             <p className='block lg:hidden uppercase text-[14px] md:text-[16px] raleway'>Отправляем на
                                 обучение в
