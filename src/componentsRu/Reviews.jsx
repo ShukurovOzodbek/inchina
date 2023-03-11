@@ -18,12 +18,16 @@ const Reviews = () => {
 
     const handleVideoPlay = (e) => {
         e.target.previousSibling.play()
+        e.target.parentNode.style.padding = "0px"
+        e.target.parentNode.style.border = "none"
         e.target.style.display = 'none'
     }
 
     const handleVideoPause = (e) => {
         e.target.pause()
         e.target.nextSibling.style.display = 'block'
+        e.target.parentNode.style.padding = "0.75rem"
+        e.target.parentNode.style.border = "5px solid #4F750E"
     }
 
     return (
