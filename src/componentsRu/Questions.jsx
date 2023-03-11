@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import p325 from '../assets/p325.png'
 import plus from '../assets/plus.png'
+import minus from '../assets/minus.png'
 import sticker2 from '../assets/sticker2.png'
 
 const Questions = () => {
@@ -18,13 +19,13 @@ const Questions = () => {
                 вопросы</h2>
             <div className='w-full flex gap-[7px] md:w-[76%] lg:w-[60%] justify-between items-start'>
                 <div className={'w-full flex flex-col gap-[7px] md:w-full lg:w-[50%]'}>
-                    <div className={`rounded-[17px] overflow-hidden ${showAnswer ? "h-auto" : "h-[90px]"} flex flex-col gap-6 justify-between items-start bg-man p-5`}>
+                    <div className={`rounded-[17px] border border-[#CDCDCD] overflow-hidden ${showAnswer ? "h-auto" : "h-[90px]"} flex flex-col gap-6 justify-between items-start bg-man p-5`}>
                         <div className={'flex w-full justify-between'}>
                             <p className='way text-[14px] font-semibold md:text-[16px]'>
                                 Какие документы мне нужно подготовить для китая?</p>
                             <div className='bg-[#CDCDCD] flex p-[13px] rounded-full cursor-pointer'>
                                 <img onClick={() => setShowAnswer(true)} className={`w-[30px] ${showAnswer ? 'hidden' : "block"}`} src={plus} alt=""/>
-                                <img onClick={() => setShowAnswer(false)} className={`w-[30px] ${showAnswer ? 'block' : "hidden"}`} src={plus} alt=""/>
+                                <img onClick={() => setShowAnswer(false)} className={`w-[30px] ${showAnswer ? 'block' : "hidden"}`} src={minus} alt=""/>
                             </div>
                         </div>
                         <p>
@@ -34,13 +35,13 @@ const Questions = () => {
                             repellendus sapiente unde!
                         </p>
                     </div>
-                    <div className={`rounded-[17px] overflow-hidden ${showAnswer2 ? "h-auto" : "h-[90px]"} flex flex-col gap-6 justify-between items-start bg-man p-5`}>
+                    <div className={`rounded-[17px] border border-[#CDCDCD] overflow-hidden ${showAnswer2 ? "h-auto" : "h-[90px]"} flex flex-col gap-6 justify-between items-start bg-man p-5`}>
                         <div className={'flex w-full justify-between'}>
                             <p className='way text-[14px] font-semibold md:text-[16px]'>
                                 Какие документы мне нужно подготовить для китая?</p>
                             <div className='bg-[#CDCDCD] flex p-[13px] rounded-full cursor-pointer'>
                                 <img onClick={() => setShowAnswer2(true)} className={`w-[30px] ${showAnswer2 ? 'hidden' : "block"}`} src={plus} alt=""/>
-                                <img onClick={() => setShowAnswer2(false)} className={`w-[30px] ${showAnswer2 ? 'block' : "hidden"}`} src={plus} alt=""/>
+                                <img onClick={() => setShowAnswer2(false)} className={`w-[30px] ${showAnswer2 ? 'block' : "hidden"}`} src={minus} alt=""/>
                             </div>
                         </div>
                         <p>
@@ -50,13 +51,13 @@ const Questions = () => {
                             repellendus sapiente unde!
                         </p>
                     </div>
-                    <div className={`rounded-[17px] overflow-hidden ${showAnswer3 ? "h-auto" : "h-[90px]"} flex flex-col gap-6 justify-between items-start bg-man p-5`}>
+                    <div className={`rounded-[17px] border border-[#CDCDCD] overflow-hidden ${showAnswer3 ? "h-auto" : "h-[90px]"} flex flex-col gap-6 justify-between items-start bg-man p-5`}>
                         <div className={'flex w-full justify-between'}>
                             <p className='way text-[14px] font-semibold md:text-[16px]'>
                                 Какие документы мне нужно подготовить для китая?</p>
                             <div className='bg-[#CDCDCD] flex p-[13px] rounded-full cursor-pointer'>
                                 <img onClick={() => setShowAnswer3(true)} className={`w-[30px] ${showAnswer3 ? 'hidden' : "block"}`} src={plus} alt=""/>
-                                <img onClick={() => setShowAnswer3(false)} className={`w-[30px] ${showAnswer3 ? 'block' : "hidden"}`} src={plus} alt=""/>
+                                <img onClick={() => setShowAnswer3(false)} className={`w-[30px] ${showAnswer3 ? 'block' : "hidden"}`} src={minus} alt=""/>
                             </div>
                         </div>
                         <p>
@@ -66,13 +67,13 @@ const Questions = () => {
                             repellendus sapiente unde!
                         </p>
                     </div>
-                    <div className={`rounded-[17px] overflow-hidden ${showAnswer4 ? "h-auto" : "h-[90px]"} flex flex-col gap-6 justify-between items-start bg-man p-5`}>
+                    <div className={`rounded-[17px] border border-[#CDCDCD] overflow-hidden ${showAnswer4 ? "h-auto" : "h-[90px]"} flex flex-col gap-6 justify-between items-start bg-man p-5`}>
                         <div className={'flex w-full justify-between'}>
                             <p className='way text-[14px] font-semibold md:text-[16px]'>
                                 Какие документы мне нужно подготовить для китая?</p>
                             <div className='bg-[#CDCDCD] flex p-[13px] rounded-full cursor-pointer'>
                                 <img onClick={() => setShowAnswer4(true)} className={`w-[30px] ${showAnswer4 ? 'hidden' : "block"}`} src={plus} alt=""/>
-                                <img onClick={() => setShowAnswer4(false)} className={`w-[30px] ${showAnswer4 ? 'block' : "hidden"}`} src={plus} alt=""/>
+                                <img onClick={() => setShowAnswer4(false)} className={`w-[30px] ${showAnswer4 ? 'block' : "hidden"}`} src={minus} alt=""/>
                             </div>
                         </div>
                         <p>
