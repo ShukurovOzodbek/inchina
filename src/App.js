@@ -38,7 +38,7 @@ function App() {
             <languageContext.Provider value={{language, setLanguage}}>
                 <>
                     {
-                        language === 'ru' ? <div className="bg-[#F9F9F9] w-full overflow-hidden
+                        language === 'ru' ? <div className="bg-[#F9F9F9] max-w-[1940px] m-auto overflow-hidden
                 m-auto
                 ">
                             {
@@ -56,7 +56,7 @@ function App() {
                                     <ConsultModal/>
                                 </>
                             }
-                        </div> : <div className="bg-[#F9F9F9] w-full overflow-hidden">
+                        </div> : <div className="bg-[#F9F9F9] max-w-[1940px] m-auto overflow-hidden">
                             <>
                                 {
                                     thankUz ? <Thank2/> : <>

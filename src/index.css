@@ -8,9 +8,6 @@
   font-family: 'Roboto Slab';
   scroll-behavior: smooth;
 }
-body{
-  max-width: 1940px;
-}
 #whyChina{
   width: 100% !important;
   background-image: url('../src/assets/whyChina2.png');
