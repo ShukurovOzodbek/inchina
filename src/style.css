@@ -1,16 +1,29 @@
+.mySwiper .swiper-button-next {
+    right: 15%;
+    top: 60%;
+}
+
+.mySwiper .swiper-button-prev {
+    left: 15%;
+    top: 60%;
+}
+
 .swiper-button-next {
     color: #363636 !important;
 }
 .swiper-button-prev {
     color: #363636 !important;
 }
-
-@media (max-width:1005px){
+.mySwiper {
+    position: inherit;
+}
+@media (max-width: 1005px) {
     .mySwiper .swiper-button-next {
-        color: #ffffff !important;
+        right: 0%;
     }
+
     .mySwiper .swiper-button-prev {
-        color: #ffffff !important;
+        left: 0%;
     }
 }
 

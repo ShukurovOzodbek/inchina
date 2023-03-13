@@ -52,7 +52,7 @@ const Reviews2 = () => {
                     className="mySwiper2"
                 >
                     <SwiperSlide>
-                        <div className='flex gap-4 items-center justify-center flex-col min-w-[350px] lg:min-w-[0px] lg:max-w-[300px]'>
+                        <div className='flex gap-4 items-center justify-center flex-col min-w-[350px] lg:min-w-[0px] lg:max-w-[380px]'>
                             <div
                                 className='relative w-[250px] h-[250px] lg:w-[220px] lg:h-[220px] md:lg:w-[220px] md:h-[220px] flex items-center justify-center p-3 overflow-hidden border-[5px] border-solid rounded-full border-[#4F750E]'>
                                 <video className={'w-full h-full rounded-full'} onClick={handleVideoPause}
@@ -71,7 +71,7 @@ const Reviews2 = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className='flex gap-4 items-center justify-center flex-col min-w-[350px] lg:min-w-[0px] lg:max-w-[300px]'>
+                        <div className='flex gap-4 items-center justify-center flex-col min-w-[350px] lg:min-w-[0px] lg:max-w-[380px]'>
                             <div
                                 className='relative w-[250px] h-[250px] lg:w-[220px] lg:h-[220px] md:lg:w-[220px] md:h-[220px] flex items-center justify-center p-3 overflow-hidden border-[5px] border-solid rounded-full border-[#4F750E]'>
                                 <video className={'w-full h-full rounded-full'} onClick={handleVideoPause}
@@ -90,7 +90,7 @@ const Reviews2 = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className='flex gap-4 items-center justify-center flex-col min-w-[350px] lg:min-w-[0px] lg:max-w-[300px]'>
+                        <div className='flex gap-4 items-center justify-center flex-col min-w-[350px] lg:min-w-[0px] lg:max-w-[380px]'>
                             <div
                                 className='relative w-[250px] h-[250px] lg:w-[220px] lg:h-[220px] md:lg:w-[220px] md:h-[220px] flex items-center justify-center p-3 overflow-hidden border-[5px] border-solid rounded-full border-[#4F750E]'>
                                 <video className={'w-full h-full rounded-full'} onClick={handleVideoPause}
@@ -109,7 +109,7 @@ const Reviews2 = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className='flex gap-4 items-center justify-center flex-col min-w-[350px] lg:min-w-[0px] lg:max-w-[300px]'>
+                        <div className='flex gap-4 items-center justify-center flex-col min-w-[350px] lg:min-w-[0px] lg:max-w-[380px]'>
                             <div
                                 className='relative w-[250px] h-[250px] lg:w-[220px] lg:h-[220px] md:lg:w-[220px] md:h-[220px] flex items-center justify-center p-3 overflow-hidden border-[5px] border-solid rounded-full border-[#4F750E]'>
                                 <video className={'w-full h-full rounded-full'} onClick={handleVideoPause}
@@ -128,7 +128,7 @@ const Reviews2 = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className='flex gap-4 items-center justify-center flex-col min-w-[350px] lg:min-w-[0px] lg:max-w-[300px]'>
+                        <div className='flex gap-4 items-center justify-center flex-col min-w-[350px] lg:min-w-[0px] lg:max-w-[380px]'>
                             <div
                                 className='relative w-[250px] h-[250px] lg:w-[220px] lg:h-[220px] md:lg:w-[220px] md:h-[220px] flex items-center justify-center p-3 overflow-hidden border-[5px] border-solid rounded-full border-[#4F750E]'>
                                 <video className={'w-full h-full rounded-full'} onClick={handleVideoPause}
