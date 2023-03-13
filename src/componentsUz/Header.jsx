@@ -44,17 +44,19 @@ const Header2 = () => {
                         </div>
                     </div>
                     <div className='w-full flex flex-col text-center gap-5 items-center pt-[50px]'>
-                        <h1 className='text-[42px] text-center font-bold sm:text-[52px] md:text-[45px] lg:text-[70px] uppercase'>Xitoyda
+                        <h1 className='text-[42px] text-center font-bold sm:text-[52px] md:text-[45px] lg:text-[60px] uppercase'>Xitoyda
                             o'qish</h1>
-                        <h3 className='text-[28px] md:text-[40px] lg:text-[49px] mb-[17px]'>留学中国</h3>
+                        <h3 className='text-[28px] md:text-[40px] lg:text-[45px] mb-[17px]'>留学中国</h3>
                         <div className='text-center'>
-                            <p className='block lg:hidden uppercase text-[14px] md:text-[16px] raleway'>Xitoyga o'qishga
-                                yuboramiz</p>
-                            <p className='block lg:hidden uppercase text-[14px] md:text-[16px] w-[100%] raleway'>garant
-                                asosida va eng arzon narxlarda</p>
-                            <p className='hidden lg:block uppercase text-[23px] w-[100%] raleway'>Garant asosida</p>
-                            <p className='hidden lg:block uppercase text-[23px] w-[100%] raleway'>Xioyga o'qishga
-                                yuboramiz</p>
+                            <div className='text-center'>
+                                <p className='block lg:hidden uppercase text-[14px] md:text-[16px] raleway'>Xitoyga o'qishga
+                                    yuboramiz</p>
+                                <p className='block lg:hidden uppercase text-[14px] md:text-[16px] w-[100%] raleway'>garant
+                                    asosida va eng arzon narxlarda</p>
+                                <p className='hidden lg:block uppercase text-[23px] w-[100%] raleway'>Garant asosida</p>
+                                <p className='hidden lg:block uppercase text-[23px] w-[100%] raleway'>Xioyga o'qishga
+                                    yuboramiz</p>
+                            </div>
                         </div>
                     </div>
                 </div>
