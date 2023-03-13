@@ -4,7 +4,7 @@ import money from '../assets/money.png'
 
 const UniversityComponent2 = ({ univ, year, img, img2, img3, text }) => {
     return (
-        <div className='flex flex-col bg-[#EEEEEE] rounded-3xl min-w-[300px]'>
+        <div className='flex flex-col bg-[#EEEEEE] rounded-3xl min-w-[300px] lg:max-w-[300px]'>
             <div className='relative w-full'>
                 <div className='absolute w-full bottom-[10%] flex flex-col gap-2'>
                     <div className='bg-[#6B941A] w-[76%] text-white p-[7px] px-5'>
@@ -26,7 +26,7 @@ const UniversityComponent2 = ({ univ, year, img, img2, img3, text }) => {
                 <img className='w-full rounded-t-3xl' src={img3} alt="" />
             </div>
             <div className='p-6 relative bg-back'>
-                <p className='way text-[15px] lg:text-[18px] leading-5'>
+                <p className='way text-[15px] lg:text-[16px] leading-5'>
                     {text}
                 </p>
             </div>

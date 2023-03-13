@@ -17,7 +17,7 @@ const Questions = () => {
             <h2 className='uppercase text-[24px] md:text-[30px] mt-4 font-bold text-center lg:text-[40px] mb-[20px]'>ЧАСТО
                 Задаваемые
                 вопросы</h2>
-            <div className='w-full flex gap-[7px] md:w-[76%] lg:w-[60%] justify-between items-start'>
+            <div className='w-full flex gap-[7px] md:w-[76%] lg:w-[68%] justify-between items-start'>
                 <div className={'w-full flex flex-col gap-[7px] md:w-full lg:w-[50%]'}>
                     <div className={`rounded-[17px] border border-[#CDCDCD] overflow-hidden ${showAnswer ? "h-auto" : "h-[90px]"} flex flex-col gap-6 justify-between items-start bg-man p-5`}>
                         <div className={'flex w-full justify-between'}>

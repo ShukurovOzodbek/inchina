@@ -1,6 +1,16 @@
-.mySwiper2 .swiper-button-next {
+.swiper-button-next {
     color: #363636 !important;
 }
-.mySwiper2 .swiper-button-prev {
+.swiper-button-prev {
     color: #363636 !important;
 }
+
+@media (max-width:1005px){
+    .mySwiper .swiper-button-next {
+        color: #ffffff !important;
+    }
+    .mySwiper .swiper-button-prev {
+        color: #ffffff !important;
+    }
+}
+

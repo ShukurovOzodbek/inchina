@@ -52,9 +52,9 @@ const Reviews2 = () => {
                     className="mySwiper2"
                 >
                     <SwiperSlide>
-                        <div className='flex gap-4 min-w-[250px] items-center justify-center flex-col'>
+                        <div className='flex gap-4 max-w-[300px] items-center justify-center flex-col'>
                             <div
-                                className='relative w-[250px] h-[250px] flex items-center justify-center p-3 overflow-hidden border-[5px] border-solid rounded-full border-[#4F750E]'>
+                                className='relative lg:w-[220px] lg:h-[220px] md:lg:w-[220px] md:h-[220px] flex items-center justify-center p-3 overflow-hidden border-[5px] border-solid rounded-full border-[#4F750E]'>
                                 <video className={'w-full h-full rounded-full'} onClick={handleVideoPause}
                                        src={video}></video>
                                 <svg onClick={handleVideoPlay} className={'absolute cursor-pointer'} width="46"
@@ -64,8 +64,8 @@ const Reviews2 = () => {
                                         stroke="white" stroke-opacity="0.62" stroke-width="5"/>
                                 </svg>
                             </div>
-                            <h3 className='uppercase font-bold way text-[24px]'>Alisher Mardiev</h3>
-                            <p className='text-center way'>Bizning jamoamiz to'liq tarkibdan iborat
+                            <h3 className='uppercase font-bold way lg:text-[22px] md:text-[24px]'>Alisher Mardiev</h3>
+                            <p className='text-center way lg:text-[14px] md:text-[14px]'>Bizning jamoamiz to'liq tarkibdan iborat
                                 Xitoy universitetlari bitiruvchilari, shuning uchun biz Xitoyda talaba hayotining barcha
                                 nuanslari haqida aniq bilamiz</p>
                         </div>
