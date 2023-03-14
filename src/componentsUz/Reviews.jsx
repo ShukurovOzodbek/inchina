@@ -1,10 +1,11 @@
 import React, {useEffect, useState} from 'react'
 import coin from '../assets/coin.png'
+import video from '../assets/video.mp4'
+import video2 from '../assets/video2.mp4'
 import {Keyboard, Navigation, Pagination} from "swiper";
 import {Swiper, SwiperSlide} from "swiper/react";
 
 import '../style.css'
-import video from "../assets/video.mp4";
 
 const Reviews2 = () => {
     const [slides, setSlides] = useState(3)
@@ -75,7 +76,7 @@ const Reviews2 = () => {
                             <div
                                 className='relative w-[250px] h-[250px] lg:w-[220px] lg:h-[220px] md:lg:w-[220px] md:h-[220px] flex items-center justify-center p-3 overflow-hidden border-[5px] border-solid rounded-full border-[#4F750E]'>
                                 <video className={'w-full h-full rounded-full'} onClick={handleVideoPause}
-                                       src={video}></video>
+                                       src={video2}></video>
                                 <svg onClick={handleVideoPlay} className={'absolute cursor-pointer'} width="46"
                                      height="52" viewBox="0 0 46 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -113,7 +114,7 @@ const Reviews2 = () => {
                             <div
                                 className='relative w-[250px] h-[250px] lg:w-[220px] lg:h-[220px] md:lg:w-[220px] md:h-[220px] flex items-center justify-center p-3 overflow-hidden border-[5px] border-solid rounded-full border-[#4F750E]'>
                                 <video className={'w-full h-full rounded-full'} onClick={handleVideoPause}
-                                       src={video}></video>
+                                       src={video2}></video>
                                 <svg onClick={handleVideoPlay} className={'absolute cursor-pointer'} width="46"
                                      height="52" viewBox="0 0 46 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
