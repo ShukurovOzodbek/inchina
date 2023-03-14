@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import coin from '../assets/coin.png'
 import video from '../assets/video.mp4'
-import video2 from '../assets/video2.MOV'
+import video2 from '../assets/video2.mp4'
 import {Keyboard, Navigation, Pagination} from "swiper";
 import {Swiper, SwiperSlide} from "swiper/react";
 
