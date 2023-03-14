@@ -8,22 +8,50 @@
     top: 60%;
 }
 
+.mySwiper2 .swiper-button-next {
+    right: 17%;
+    top: 45%;
+}
+
+.mySwiper2 .swiper-button-prev {
+    left: 17%;
+    top: 45%;
+}
+
 .swiper-button-next {
     color: #363636 !important;
 }
+
 .swiper-button-prev {
     color: #363636 !important;
 }
+
 .mySwiper {
     position: inherit;
 }
+
+.mySwiper2 {
+    position: inherit;
+}
+
 @media (max-width: 1005px) {
     .mySwiper .swiper-button-next {
-        right: 0%;
+        display: none;
     }
 
     .mySwiper .swiper-button-prev {
-        left: 0%;
+        display: none;
+    }
+
+    .mySwiper2 .swiper-button-next {
+        display: none;
+    }
+
+    .mySwiper2 .swiper-button-prev {
+        display: none;
+    }
+    .mySwiper, mySwiper2 {
+        overflow: visible;
     }
 }
 

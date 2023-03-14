@@ -54,7 +54,7 @@ const Timer = () => {
             <div className='md:w-[76%] text-white flex flex-col gap-4 items-center text-center top-20 right-0 lg:py-[70px]'>
                 <h2 className='uppercase text-[27px] text-center font-[900] md:text-[30px] lg:text-[40px]'>до конца сезона осталось:</h2>
                 <div className='w-full flex flex-col items-center gap-10 lg:w-[500px]'>
-                    <div className='w-[90%] bg-[#1E1E1E] rounded-2xl justify-between p-5 px-[40px] flex items-start'>
+                    <div className='w-[90%] bg-[#1E1E1E] rounded-2xl justify-between p-5 px-[70px] px-[40px] flex items-start'>
                         <div className='flex flex-col items-center'>
                             <h3 id="day" className='text-[30px] font-bold'>25</h3>
                             <span className='way'>Дней</span>
@@ -71,9 +71,9 @@ const Timer = () => {
                         </div>
                     </div>
                     <form onSubmit={handleSubmit} className='w-[90%] flex flex-col gap-4 items-center' action="">
-                        <input value={name} onChange={(e) => setName((e.target.value))} type="text" className="bg-gray-50 border text-black p-[12px] pl-[33px] way text-[16px] border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="Имя" required />
-                        <input value={phoneNumber} onChange={(e) => setPhoneNumber((e.target.value))} type="number" placeholder="(99) 999-99-99" maxLength="10" required pattern={'[0-9]{2} [0-9]{7}'} className="bg-gray-50 border text-black p-[12px] pl-[33px] way text-[16px] border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="Номер телефона (+998 937777777)" required />
-                        <button className='w-[90%] lg:w-full rounded-full lg:rounded-lg lg:text-[14px] bg-[#6B941A] text-white text-[12px] cursor-pointer font-semibold uppercase raleway p-4'>бесплатная консультация</button>
+                        <input value={name} onChange={(e) => setName((e.target.value))} type="text" className="bg-gray-50 border text-black p-[15px] text-[20px] pl-[33px] way border-gray-300  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="Имя" required />
+                        <input value={phoneNumber} onChange={(e) => setPhoneNumber((e.target.value))} type="number" placeholder="(99) 999-99-99" maxLength="10" required pattern={'[0-9]{2} [0-9]{7}'} className="bg-gray-50 border text-black p-[15px] text-[20px] pl-[33px] way border-gray-300  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" placeholder="Номер телефона (+998 937777777)" required />
+                        <button className='w-[90%] lg:w-full rounded-full lg:rounded-lg lg:text-[19px] bg-[#6B941A] text-white cursor-pointer font-semibold uppercase raleway p-4'>бесплатная консультация</button>
                     </form>
                 </div>
             </div>

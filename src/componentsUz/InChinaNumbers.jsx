@@ -10,7 +10,7 @@ const InChinaNumbers2 = () => {
     return (
         <div className='p-5 pt-16 relative md:flex items-center flex-col' id='inNumbers'>
             <img className='absolute left-0' src={flower2} alt=""/>
-            <h2 className='uppercase text-[27px] text-center font-[900] md:text-[30px] lg:text-[40px]'><span
+            <h2 className='uppercase text-[27px] text-center font-[900] md:text-[30px] lg:text-[40px] text-[#393939]'><span
                 className='text-[#B10A17]'>INCHINA </span> SONLARDA</h2>
             <p className='text-center text-[#747474] pt-4 text-[13.8px] lg:w-[60%] way font-[500] leading-[18px] lg:leading-7 md:text-[16px] lg:text-[22px]'>Наша
                 Bizning jamoamiz butunlay Xitoy universitetlari bitiruvchilaridan iborat, shuning uchun biz Xitoydagi
@@ -22,15 +22,15 @@ const InChinaNumbers2 = () => {
                     <div className='flex items-center flex-col gap-2'>
                         <h3 className='flex gap-1 items-end'><span
                             className='font-semibold text-[32px] leading-[36px]'>4</span><span
-                            className='font-semibold text-[18px]'>года</span></h3>
-                        <span className='text-[15px] text-center font-bold'>Bozordagi ish o'rinlari</span>
+                            className='font-semibold text-[18px] text-[#393939]'>yil</span></h3>
+                        <span className='text-[15px] text-center font-bold text-[#393939]'>Bozordagi ish o'rinlari</span>
                     </div>
                 </div>
                 <div className='w-[47%] p-3 flex flex-col gap-3 items-center'>
                     <img className='w-[90px] h-[90px] object-contain' src={books} alt=""/>
                     <div className='flex items-center flex-col gap-2'>
                         <h3 className='flex gap-1 items-end'><span
-                            className='font-semibold text-[32px] leading-[36px]'>85+</span></h3>
+                            className='font-semibold text-[32px] leading-[36px] text-[#393939]'>85+</span></h3>
                         <span className='text-[15px] text-center font-bold'>O'quv dasturlari</span>
                     </div>
                 </div>
@@ -38,16 +38,16 @@ const InChinaNumbers2 = () => {
                     <img className='w-[90px] h-[90px] object-contain' src={diagnostic} alt=""/>
                     <div className='flex items-center flex-col gap-2'>
                         <h3 className='flex gap-1 items-end'><span
-                            className='font-semibold text-[32px] leading-[36px]'>90%</span></h3>
-                        <span className='text-[15px] text-center font-bold'>To'liq grant olish imkoniyati</span>
+                            className='font-semibold text-[32px] leading-[36px] text-[#393939]'>90%</span></h3>
+                        <span className='text-[15px] text-center font-bold text-[#393939]'>To'liq grant olish imkoniyati</span>
                     </div>
                 </div>
                 <div className='w-[47%] p-3 flex flex-col gap-3 items-center'>
                     <img className='w-[90px] h-[90px] object-contain' src={filials} alt=""/>
                     <div className='flex items-center flex-col gap-2'>
                         <h3 className='flex gap-1 items-end'><span
-                            className='font-semibold text-[32px] leading-[36px]'>2</span></h3>
-                        <span className='text-[15px] text-center font-bold'>O'zbekistonda faoliyat yuritayotgan filiallar</span>
+                            className='font-semibold text-[32px] leading-[36px] text-[#393939]'>2</span></h3>
+                        <span className='text-[15px] text-center font-bold text-[#393939]'>O'zbekistonda faoliyat yuritayotgan filiallar</span>
                     </div>
                 </div>
             </div>

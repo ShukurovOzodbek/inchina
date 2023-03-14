@@ -13,7 +13,7 @@ const Instruction = () => {
                 <div className={'w-[52%] md:w-[40%] lg:w-[30%] flex flex-col gap-2 absolute right-[20px] lg:right-[60px]'}>
                     <h2 className='flex flex-col text-[29px] md:text-[32px] lg:text-[36px]'>
                         <b className='text-[#B10A17] leading-3'>Бесплатная</b>
-                        <b className={'leading-10'}>инструкция</b>
+                        <b className={'leading-10 text-[#393939]'}>инструкция</b>
                     </h2>
                     <p className='text-[14px] w-[99.6%] md:text-[16px] way'>как иностранцу устроиться на работу в Китае.</p>
                     <button

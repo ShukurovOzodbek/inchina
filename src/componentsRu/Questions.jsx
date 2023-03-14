@@ -14,14 +14,14 @@ const Questions = () => {
             className='w-full relative min-h-[300px] lg:min-h-[700px] flex flex-col items-center justify-center gap-[30px] p-6 pb-[50px]'
             id='questions'>
             <img className='absolute top-[-210px] left-0' src={p325} alt=""/>
-            <h2 className='uppercase text-[24px] md:text-[30px] mt-4 font-bold text-center lg:text-[40px] mb-[20px]'>ЧАСТО
+            <h2 className='uppercase text-[24px] md:text-[30px] mt-4 font-bold text-center lg:text-[40px] mb-[20px] text-[#393939]'>ЧАСТО
                 Задаваемые
                 вопросы</h2>
             <div className='w-full flex gap-[7px] md:w-[76%] lg:w-[68%] justify-between items-start'>
                 <div className={'w-full flex flex-col gap-[7px] md:w-full lg:w-[50%]'}>
                     <div className={`rounded-[17px] border border-[#CDCDCD] overflow-hidden ${showAnswer ? "h-auto" : "h-[90px]"} flex flex-col gap-6 justify-between items-start bg-man p-5`}>
                         <div className={'flex w-full justify-between'}>
-                            <p className='way text-[14px] font-semibold md:text-[16px]'>
+                            <p className='way text-[14px] font-semibold md:text-[16px] text-[#393939]'>
                                 Какие документы мне нужно подготовить для китая?</p>
                             <div className='bg-[#CDCDCD] flex p-[13px] rounded-full cursor-pointer'>
                                 <img onClick={() => setShowAnswer(true)} className={`w-[30px] ${showAnswer ? 'hidden' : "block"}`} src={plus} alt=""/>
@@ -37,7 +37,7 @@ const Questions = () => {
                     </div>
                     <div className={`rounded-[17px] border border-[#CDCDCD] overflow-hidden ${showAnswer2 ? "h-auto" : "h-[90px]"} flex flex-col gap-6 justify-between items-start bg-man p-5`}>
                         <div className={'flex w-full justify-between'}>
-                            <p className='way text-[14px] font-semibold md:text-[16px]'>
+                            <p className='way text-[14px] font-semibold md:text-[16px] text-[#393939]'>
                                 Какие документы мне нужно подготовить для китая?</p>
                             <div className='bg-[#CDCDCD] flex p-[13px] rounded-full cursor-pointer'>
                                 <img onClick={() => setShowAnswer2(true)} className={`w-[30px] ${showAnswer2 ? 'hidden' : "block"}`} src={plus} alt=""/>
@@ -53,7 +53,7 @@ const Questions = () => {
                     </div>
                     <div className={`rounded-[17px] border border-[#CDCDCD] overflow-hidden ${showAnswer3 ? "h-auto" : "h-[90px]"} flex flex-col gap-6 justify-between items-start bg-man p-5`}>
                         <div className={'flex w-full justify-between'}>
-                            <p className='way text-[14px] font-semibold md:text-[16px]'>
+                            <p className='way text-[14px] font-semibold md:text-[16px] text-[#393939]'>
                                 Какие документы мне нужно подготовить для китая?</p>
                             <div className='bg-[#CDCDCD] flex p-[13px] rounded-full cursor-pointer'>
                                 <img onClick={() => setShowAnswer3(true)} className={`w-[30px] ${showAnswer3 ? 'hidden' : "block"}`} src={plus} alt=""/>
@@ -69,7 +69,7 @@ const Questions = () => {
                     </div>
                     <div className={`rounded-[17px] border border-[#CDCDCD] overflow-hidden ${showAnswer4 ? "h-auto" : "h-[90px]"} flex flex-col gap-6 justify-between items-start bg-man p-5`}>
                         <div className={'flex w-full justify-between'}>
-                            <p className='way text-[14px] font-semibold md:text-[16px]'>
+                            <p className='way text-[14px] font-semibold md:text-[16px] text-[#393939]'>
                                 Какие документы мне нужно подготовить для китая?</p>
                             <div className='bg-[#CDCDCD] flex p-[13px] rounded-full cursor-pointer'>
                                 <img onClick={() => setShowAnswer4(true)} className={`w-[30px] ${showAnswer4 ? 'hidden' : "block"}`} src={plus} alt=""/>

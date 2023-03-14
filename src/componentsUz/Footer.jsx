@@ -8,13 +8,13 @@ const Footer2 = () => {
                 <img className='flex' src={logo} alt=""/>
                 <div className='flex flex-col w-full gap-2 items-center md:items-start'>
                     <div className={'flex flex-col mt-2 gap-3lg:w-[70%]'}>
-                        <a className='text-[20px] way' href="/uz#direction">Bizning yo'nalishlarimiz</a>
-                        <a className='text-[20px] way' href="/uz#whyChina">Nega Xitoy</a>
-                        <a className='text-[20px] way' href="/uz#popularPrograms">Eng mashxur dasturlar</a>
-                        <a className='text-[20px] way' href="/uz#inNumbers">Biz sonlarda</a>
-                        <a className='text-[20px] way' href="/uz#instruction">Xitoyda ish</a>
-                        <a className='text-[20px] way' href="/uz#reviews">Sharhlar</a>
-                        <a className='text-[20px] way' href="/uz#questions">Ko'p beriladigan savollar</a>
+                        <a className='text-[20px] way text-[#393939]' href="#direction">Bizning yo'nalishlarimiz</a>
+                        <a className='text-[20px] way text-[#393939]' href="#whyChina">Nega Xitoy</a>
+                        <a className='text-[20px] way text-[#393939]' href="#popularPrograms">Eng mashxur dasturlar</a>
+                        <a className='text-[20px] way text-[#393939]' href="#inNumbers">Biz sonlarda</a>
+                        <a className='text-[20px] way text-[#393939]' href="#instruction">Xitoyda ish</a>
+                        <a className='text-[20px] way text-[#393939]' href="#reviews">Sharhlar</a>
+                        <a className='text-[20px] way text-[#393939]' href="#questions">Ko'p beriladigan savollar</a>
                     </div>
                 </div>
             </div>

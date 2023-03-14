@@ -22,7 +22,7 @@ const PopularPrograms2 = () => {
     return (
         <div className='w-full p-5 flex flex-col relative md:items-center gap-6 border-dashed pb-14 border-b-[3px] border-b-[#747474]' id="popularPrograms">
             <div className='flex flex-col gap-4 pt-10'>
-                <h2 className='uppercase text-[25px] font-bold text-center md:text-[30px] lg:text-[40px]'>
+                <h2 className='uppercase text-[25px] font-bold text-center md:text-[30px] lg:text-[40px] text-[#393939]'>
                     ENG MASHXUR
                      <br/> DASTURLAR</h2>
                 <p className='text-center text-[#747474] text-[14px] way font-[500] md:text-[18px] lg:text-[22px]'>

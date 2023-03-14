@@ -10,7 +10,7 @@ import language from '../assets/language.png'
 const Direction2 = () => {
     return (
         <div id="direction" className='w-full p-5 py-20 flex items-center flex-col gap-20 relative overflow-hidden lg:max-h-[800px]'>
-            <h2 className='uppercase text-[25px] text-center w-full font-[900] text-[#393939] md:text-[30px] lg:text-[40px]'>Bizning yo'nalishlarimiz</h2>
+            <h2 className='uppercase text-[25px] text-center w-full font-[900] text-[#393939] md:text-[30px] lg:text-[40px] text-[#393939]'>Bizning yo'nalishlarimiz</h2>
             <img className='absolute right-[-10px] top-[15%]' src={flower} alt=""/>
             <img className='absolute block lg:hidden right-[-10px] bottom-[-10%]' src={coins} alt=""/>
             <img className='absolute left-[-10px] bottom-[-10%] w-[120px]' src={coins2} alt=""/>

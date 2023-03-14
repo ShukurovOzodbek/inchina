@@ -37,7 +37,7 @@ const Reviews2 = () => {
             <h2 className='uppercase text-[26px] md:text-[30px] text-center font-[900] lg:text-[40px]'><span
                 className='text-[#B10A17]'>Talabalar </span>sharhlari</h2>
             <div
-                className='md:w-[76%] absolute lg:w-[63%] md:m-auto right-0 left-0 top-[120px] lg:top-[170px] scroll px-5 flex gap-[70px] items-center justify-between pb-10'>
+                className='md:w-[76%] h-[700px] lg:w-[63%] md:m-auto px-5 flex gap-[70px] items-center justify-between pb-10'>
                 <Swiper
                     slidesPerView={slides}
                     spaceBetween={40}
@@ -64,8 +64,8 @@ const Reviews2 = () => {
                                         stroke="white" stroke-opacity="0.62" stroke-width="5"/>
                                 </svg>
                             </div>
-                            <h3 className='uppercase font-bold way lg:text-[22px] md:text-[24px]'>Alisher Mardiev</h3>
-                            <p className='text-center way lg:text-[14px] md:text-[14px]'>Bizning jamoamiz to'liq tarkibdan iborat
+                            <h3 className='uppercase font-bold way lg:text-[22px] md:text-[24px] text-[#393939]'>Alisher Mardiev</h3>
+                            <p className='text-center way lg:text-[14px] md:text-[14px] text-[#393939]'>Bizning jamoamiz to'liq tarkibdan iborat
                                 Xitoy universitetlari bitiruvchilari, shuning uchun biz Xitoyda talaba hayotining barcha
                                 nuanslari haqida aniq bilamiz</p>
                         </div>
@@ -83,8 +83,8 @@ const Reviews2 = () => {
                                         stroke="white" stroke-opacity="0.62" stroke-width="5"/>
                                 </svg>
                             </div>
-                            <h3 className='uppercase font-bold way lg:text-[22px] md:text-[24px]'>Alisher Mardiev</h3>
-                            <p className='text-center way lg:text-[14px] md:text-[14px]'>Bizning jamoamiz to'liq tarkibdan iborat
+                            <h3 className='uppercase font-bold way lg:text-[22px] md:text-[24px] text-[#393939]'>Alisher Mardiev</h3>
+                            <p className='text-center way lg:text-[14px] md:text-[14px] text-[#393939]'>Bizning jamoamiz to'liq tarkibdan iborat
                                 Xitoy universitetlari bitiruvchilari, shuning uchun biz Xitoyda talaba hayotining barcha
                                 nuanslari haqida aniq bilamiz</p>
                         </div>
@@ -102,8 +102,8 @@ const Reviews2 = () => {
                                         stroke="white" stroke-opacity="0.62" stroke-width="5"/>
                                 </svg>
                             </div>
-                            <h3 className='uppercase font-bold way lg:text-[22px] md:text-[24px]'>Alisher Mardiev</h3>
-                            <p className='text-center way lg:text-[14px] md:text-[14px]'>Bizning jamoamiz to'liq tarkibdan iborat
+                            <h3 className='uppercase font-bold way lg:text-[22px] md:text-[24px] text-[#393939]'>Alisher Mardiev</h3>
+                            <p className='text-center way lg:text-[14px] md:text-[14px] text-[#393939]'>Bizning jamoamiz to'liq tarkibdan iborat
                                 Xitoy universitetlari bitiruvchilari, shuning uchun biz Xitoyda talaba hayotining barcha
                                 nuanslari haqida aniq bilamiz</p>
                         </div>
@@ -121,8 +121,8 @@ const Reviews2 = () => {
                                         stroke="white" stroke-opacity="0.62" stroke-width="5"/>
                                 </svg>
                             </div>
-                            <h3 className='uppercase font-bold way lg:text-[22px] md:text-[24px]'>Alisher Mardiev</h3>
-                            <p className='text-center way lg:text-[14px] md:text-[14px]'>Bizning jamoamiz to'liq tarkibdan iborat
+                            <h3 className='uppercase font-bold way lg:text-[22px] md:text-[24px] text-[#393939]'>Alisher Mardiev</h3>
+                            <p className='text-center way lg:text-[14px] md:text-[14px] text-[#393939]'>Bizning jamoamiz to'liq tarkibdan iborat
                                 Xitoy universitetlari bitiruvchilari, shuning uchun biz Xitoyda talaba hayotining barcha
                                 nuanslari haqida aniq bilamiz</p>
                         </div>
@@ -140,8 +140,8 @@ const Reviews2 = () => {
                                         stroke="white" stroke-opacity="0.62" stroke-width="5"/>
                                 </svg>
                             </div>
-                            <h3 className='uppercase font-bold way lg:text-[22px] md:text-[24px]'>Alisher Mardiev</h3>
-                            <p className='text-center way lg:text-[14px] md:text-[14px]'>Bizning jamoamiz to'liq tarkibdan iborat
+                            <h3 className='uppercase font-bold way lg:text-[22px] md:text-[24px] text-[#393939]'>Alisher Mardiev</h3>
+                            <p className='text-center way lg:text-[14px] md:text-[14px] text-[#393939]'>Bizning jamoamiz to'liq tarkibdan iborat
                                 Xitoy universitetlari bitiruvchilari, shuning uchun biz Xitoyda talaba hayotining barcha
                                 nuanslari haqida aniq bilamiz</p>
                         </div>

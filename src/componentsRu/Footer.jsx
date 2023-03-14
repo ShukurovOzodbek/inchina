@@ -8,13 +8,13 @@ const Footer = () => {
                 <img className='flex' src={logo} alt=""/>
                 <div className='flex flex-col w-full gap-2 items-center md:items-start'>
                     <div className={'flex flex-col mt-2 gap-3lg:w-[70%]'}>
-                        <a className='text-[20px] way' href="/#direction">Наши направления</a>
-                        <a className='text-[20px] way' href="/#whyChina">Почему Китай</a>
-                        <a className='text-[20px] way' href="/#popularPrograms">Популярные программы</a>
-                        <a className='text-[20px] way' href="/#inNumbers">Мы в цифрах</a>
-                        <a className='text-[20px] way' href="/#instruction">Работа в Китае</a>
-                        <a className='text-[20px] way' href="/#reviews">Отзывы</a>
-                        <a className='text-[20px] way' href="/#questions">Часто задаваемые вопросы</a>
+                        <a className='text-[20px] way text-[#393939]' href="#direction">Наши направления</a>
+                        <a className='text-[20px] way text-[#393939]' href="#whyChina">Почему Китай</a>
+                        <a className='text-[20px] way text-[#393939]' href="#popularPrograms">Популярные программы</a>
+                        <a className='text-[20px] way text-[#393939]' href="#inNumbers">Мы в цифрах</a>
+                        <a className='text-[20px] way text-[#393939]' href="#instruction">Работа в Китае</a>
+                        <a className='text-[20px] way text-[#393939]' href="#reviews">Отзывы</a>
+                        <a className='text-[20px] way text-[#393939]' href="#questions">Часто задаваемые вопросы</a>
                     </div>
                 </div>
             </div>

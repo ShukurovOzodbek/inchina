@@ -14,7 +14,7 @@ const Instruction2 = () => {
                     className={'w-[52%] md:w-[40%] lg:w-[30%] flex flex-col gap-2 absolute right-[20px] lg:right-[60px]'}>
                     <h2 className='flex flex-col text-[29px] md:text-[32px] lg:text-[36px]'>
                         <b className='text-[#B10A17] leading-3'>Bepul</b>
-                        <b className={'leading-10'}>Ro'yxatnoma</b>
+                        <b className={'leading-10 text-[#393939]'}>Ro'yxatnoma</b>
                     </h2>
                     <p className='text-[14px] w-[99.6%] md:text-[16px] way'>Qanday qilib chet ellik Xitoyda ish topishi
                         mumkin?</p>

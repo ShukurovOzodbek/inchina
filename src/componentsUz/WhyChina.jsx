@@ -11,12 +11,12 @@ const WhyChina2 = () => {
              id='whyChina'>
             <div
                 className="w-full p-10 flex bg-back md:w-[76%] lg:w-[600px] flex-col items-center object-contain gap-6 relative rounded-3xl bg-[#EEEEEE]">
-                <h2 className='text-[23px] font-bold uppercase md:text-[30px] lg:text-[40px]'>nega xitoy?</h2>
+                <h2 className='text-[23px] font-bold uppercase md:text-[30px] lg:text-[40px] text-[#393939]'>nega xitoy?</h2>
                 <div className='flex flex-col gap-6'>
-                    <p className='way text-[13px] font-[500] md:text-[15px]'>Xitoy so'nggi 10 yil ichida dunyodagi eng
+                    <p className='way text-[13px] font-[500] md:text-[15px] text-[#393939]'>Xitoy so'nggi 10 yil ichida dunyodagi eng
                         tez rivojlanayotgan iqtisodiyot bo'ldi. Bu yerda hamma narsa rivojlangan - tibbiyot, turmush
                         darajasi, infratuzilma, turizm va, albatta <b>ta'lim.</b></p>
-                    <p className='way text-[13px] font-[500] md:text-[15px]'>QS ma'lumotlariga ko'ra, Xitoyning 100 dan
+                    <p className='way text-[13px] font-[500] md:text-[15px] text-[#393939]'>QS ma'lumotlariga ko'ra, Xitoyning 100 dan
                         ortiq universitetlari hozirda dunyodagi eng yaxshi 1000 ta universitetlar qatoriga kiradi. Bu
                         barcha universitetlarning diplomlari xalqaro mehnat bozorida, jumladan, O‘zbekistonda ham erkin
                         ko‘rsatilgan.</p>

@@ -10,7 +10,7 @@ const InChinaNumbers = () => {
     return (
         <div className='p-5 pt-16 relative md:flex items-center flex-col' id='inNumbers'>
             <img className='absolute left-0' src={flower2} alt=""/>
-            <h2 className='uppercase text-[27px] text-center font-[900] md:text-[30px] lg:text-[40px]'><span
+            <h2 className='uppercase text-[27px] text-center font-[900] md:text-[30px] lg:text-[40px] text-[#393939]'><span
                 className='text-[#B10A17]'>inchina</span> в цифрах</h2>
             <p className='text-center text-[#747474] pt-4 text-[13.8px] lg:w-[60%] way font-[500] leading-[18px] lg:leading-7 md:text-[16px] lg:text-[22px]'>Наша
                 команда целиком и полностью состоит из
@@ -21,32 +21,32 @@ const InChinaNumbers = () => {
                     <div className='flex items-center flex-col gap-2'>
                         <h3 className='flex gap-1 items-end'><span
                             className='font-semibold text-[32px] leading-[36px]'>4</span><span
-                            className='font-semibold text-[18px]'>года</span></h3>
-                        <span className='text-[15px] text-center font-bold'>Работы на рынке</span>
+                            className='font-semibold text-[18px] text-[#393939]'>года</span></h3>
+                        <span className='text-[15px] text-center font-bold text-[#393939]'>Работы на рынке</span>
                     </div>
                 </div>
                 <div className='w-[47%] p-3 flex flex-col gap-3 items-center'>
                     <img className='w-[90px] h-[90px] object-contain' src={books} alt=""/>
                     <div className='flex items-center flex-col gap-2'>
                         <h3 className='flex gap-1 items-end'><span
-                            className='font-semibold text-[32px] leading-[36px]'>85+</span></h3>
-                        <span className='text-[15px] text-center font-bold'>Учебных программ</span>
+                            className='font-semibold text-[32px] leading-[36px] text-[#393939]'>85+</span></h3>
+                        <span className='text-[15px] text-center font-bold text-[#393939]'>Учебных программ</span>
                     </div>
                 </div>
                 <div className='w-[47%] p-3 flex flex-col gap-3 items-center'>
                     <img className='w-[90px] h-[90px] object-contain' src={diagnostic} alt=""/>
                     <div className='flex items-center flex-col gap-2'>
                         <h3 className='flex gap-1 items-end'><span
-                            className='font-semibold text-[32px] leading-[36px]'>90%</span></h3>
-                        <span className='text-[15px] text-center font-bold'>Шансы получить полный грант</span>
+                            className='font-semibold text-[32px] leading-[36px] text-[#393939]'>90%</span></h3>
+                        <span className='text-[15px] text-center font-bold text-[#393939]'>Шансы получить полный грант</span>
                     </div>
                 </div>
                 <div className='w-[47%] p-3 flex flex-col gap-3 items-center'>
                     <img className='w-[90px] h-[90px] object-contain' src={filials} alt=""/>
                     <div className='flex items-center flex-col gap-2'>
                         <h3 className='flex gap-1 items-end'><span
-                            className='font-semibold text-[32px] leading-[36px]'>2</span></h3>
-                        <span className='text-[15px] text-center font-bold'>Действующих филиала в Узбекистане</span>
+                            className='font-semibold text-[32px] leading-[36px] text-[#393939]'>2</span></h3>
+                        <span className='text-[15px] text-center font-bold text-[#393939]'>Действующих филиала в Узбекистане</span>
                     </div>
                 </div>
             </div>

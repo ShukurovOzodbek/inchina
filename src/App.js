@@ -26,6 +26,7 @@ import Thank from "./componentsRu/Thank";
 import {useEffect, useState} from "react";
 import {languageContext} from "./contexts/languageContext";
 import {thankContext} from "./contexts/thank";
+import {Helmet} from "react-helmet";
 
 function App() {
     const [language, setLanguage] = useState('ru')
@@ -33,10 +34,11 @@ function App() {
     const [thankUz, setThankUz] = useState(false)
 
     return (
-
         <thankContext.Provider value={{thankRu, thankUz, setThankRu, setThankUz}}>
             <languageContext.Provider value={{language, setLanguage}}>
                 <>
+                    <Helmet>
+                    </Helmet>
                     {
                         language === 'ru' ? <div className="bg-[#F9F9F9] max-w-[1940px] m-auto overflow-hidden
                 m-auto
